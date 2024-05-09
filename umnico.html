@@ -1,0 +1,59 @@
+<script>
+    function umnico_rewrite(){
+        const imnicoWr = document.querySelector('#umnico-widget-wrapper');
+        if(!imnicoWr){
+            console.log('врапера нет');
+            setTimeout(umnico_rewrite, 100);
+        } else{
+            let shroot = imnicoWr.shadowRoot;
+            if(shroot){
+                let mainUmn = shroot.querySelector('.widget__preview-main');
+                let logoUmn = shroot.querySelector('.widget-umnico-logo');
+                if(mainUmn && logoUmn){
+                    logoUmn.remove();
+                    mainUmn.innerHTML = 'ЧАТ';
+                    mainUmn.style.cssText = `
+                        padding: 10px 20px !important;
+                        border-radius: 0px !important;
+                        border: 1px solid #0000001A !important;
+                        background: 1px #FFFFFF !important;
+                        font-family: TTChocolates !important;
+                        font-size: 14px !important;
+                        font-weight: 400 !important;
+                        line-height: 11.2px !important;
+                        letter-spacing: -0.03em !important;
+                        text-align: left !important;
+                        color: #000 !important;
+                        width: auto !important;
+                        height: auto !important;
+                    `;
+                } else{
+                    console.log('элементов нет');
+                    setTimeout(umnico_rewrite, 100);
+                }
+            } else{
+                console.log('рута нет');
+            }
+        }
+    }
+    
+    function multicolor_rewrite(){
+        const multicolor = document.querySelector('[data-filter-value="Мультиколор"]');
+        if(!multicolor){
+            console.log('multicolor нет');
+            setTimeout(multicolor_rewrite, 100);
+        } else{
+            let multicolorInd = multicolor.nextSibling;
+            multicolorInd.style.cssText = "background: url(https://static.tildacdn.com/tild3735-3965-4861-a536-303831653134/photo_2024-05-06_00-.jpg); background-size: cover;";
+        }
+    }
+
+    umnico_rewrite();
+    multicolor_rewrite();
+</script>
+
+<style>
+    .uc-hidden{
+        display: none;
+    }
+</style>

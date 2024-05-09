@@ -1,0 +1,521 @@
+<style>
+    html body .t450__list_item .t-menu__link-item{
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 16.8px */
+        letter-spacing: -0.42px;
+    }
+
+    html body .t450__list_item .title__menu{
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.8px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        opacity: 0.5;
+        cursor: auto;
+        margin-bottom: 10px;
+        pointer-events: none;
+    }
+
+    html body .t450__list_item .title__menu:hover{
+        color: #0000;
+
+    }
+
+    .t450__close{
+        right: auto !important;
+        left: 5px;
+        
+    }
+
+    .close__icon{
+        transition: all 0.3s;
+    }
+
+    .close__icon:hover{
+        opacity: 0.5;
+    }
+
+    .t450__close:active{
+        opacity: 0.3;
+    }
+
+    .t450__right_buttons_but a{
+        display: flex;
+        gap: 3px;
+    }
+
+    .wha__btn_img{
+        display: flex;
+        align-items:center;
+    }
+
+    .t450__right_buttons_but a .wha__btn_img path{
+        transition: all 0.2s;
+    }
+
+    .t450__right_buttons_but a:hover .wha__btn_img path{
+        fill: #000;
+    }
+
+    .t1002 .t1002__close {
+        left: auto !important;
+    }
+
+    .t1002__close{
+        padding: 0 !important;
+    }
+
+    [data-tab-title="Цвет"]{
+        display: none;
+    }
+
+    [data-edition-option-id="Цвет"]{
+        display: none;
+    }
+
+    .t706__sidebar-close, .t1002__close.t1002__wishlistwin-close{
+        top: 0 !important;
+        right: 0 !important;
+    }
+
+    .t706__cartpage-close, .t706__sidebar-close-btn{
+        padding: 0 !important;
+    }
+
+    .t1002__close-button, html body .t706__sidebar-close-btn, .t706__sidebar-close-btn{
+        padding: 0 !important;
+        width: auto !important;
+    }
+
+    .t1002__product-del{
+        display: none;
+        transition: all 0.3s;
+        opacity: 1 !important;
+        position: static !important;
+    }
+
+    .t1002__product-del:hover{
+        opacity: 0.5 !important;
+
+    }
+
+    .t706__sidebar-close, html .t1002__close.t1002__wishlistwin-close{
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .t-store__prod-popup__gallery-column{
+        position: static !important;
+    }
+    
+    .t-store__prod-popup__info.t-store__prod-popup__col_fixed{
+        height: fit-content;
+        height: -webkit-fit-content;
+        left: auto;
+        right: 20px;
+    }
+
+    .t758__list{
+        opacity: 0;
+    }
+
+    .t450__close{
+        right: auto !important;
+        left: 0 !important;
+        top: 0 !important;
+    } 
+
+    .t706__product-plus,
+    .t706__product-minus,
+    .t706__product-del {
+        opacity: 0.8;
+    }
+
+    .uc-catalog-none{
+        display: none !important;
+    }
+
+    .t-store__card__mark-wrapper, .t1002__addBtn {
+        mix-blend-mode: darken !important;
+    }
+
+    .t-store__prod-snippet__container{
+        overflow: hidden;
+    }
+
+    .t-slds__main .t-slds__arrow{
+        background: transparent !important;
+        display: flex;
+        align-items: center;
+    }
+
+    .t-slds__main .t-slds__arrow-right{
+        justify-content: flex-end;
+    }
+
+    .t-slds__main .t-slds__arrow-left{
+        justify-content: start;
+    }
+
+    .t-slds__main .t-slds__arrow_wrapper-right{
+        right: 7px !important;
+    }
+
+    .t-slds__main .t-slds__arrow_wrapper-left{
+        left: 7px !important;
+    }
+
+    .t706__search-icon {
+        right: 5px !important;
+        top: calc(50% - 13px) !important;
+    }
+
+    .t706__search-icon{
+        width: 13px !important;
+        height: 11px !important;
+    }
+    
+    @media screen and (max-width: 960px){
+        .t-store__relevants__container .t-slds__arrow-withbg {
+            width: 30px !important;
+            height: 30px !important;
+        }
+
+        .t-store__relevants__container .t-slds__arrow_wrapper-right{
+            right: 23px !important;
+        }
+
+        .t-store__relevants__container .t-slds__arrow_wrapper-left{
+            left: 13px !important;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        .t450__close{
+            right: 0 !important;
+            left: auto !important;
+        } 
+
+        .t-store__prod-popup__btn-wrapper{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            z-index: 100;
+            padding: 10px !important;
+            margin: 0 !important;
+            box-sizing: border-box;
+            background: #fff;
+            gap: 10px;
+        }
+
+        .t-store__prod-popup__btn{
+            height: 40px;
+            width: 100%;
+        }
+
+        .t1002__addBtn{
+            height: 40px;
+            width: 40px;
+        }
+
+        .t-store__prod-popup__btn-wrapper * {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        .t-store__empty-part-msg-wrapper{
+            min-height: 100vh !important;
+        }
+
+    }
+</style>
+
+<script>
+    function shadow_root_el(){
+        if(window.innerWidth < 769){
+            const umicof = document.querySelector('#umnico-widget-wrapper');
+            if(umicof){
+                if(umicof.shadowRoot.querySelector('.widget__preview-block')){
+                    if(document.querySelector(".uc-catalog") || document.querySelector(".t-store__prod-snippet__container")){
+                        umicof.shadowRoot.querySelector('.widget__preview-block').style.bottom = "60px";
+                    }
+                    umicof.shadowRoot.querySelector('.widget__preview-block').style.right = "10px";
+                    umicof.shadowRoot.querySelector('.widget__preview-block').style.marginRight = "0";
+                }
+            }
+            
+        }
+    }
+
+    function remake_title_menu(){
+        const menuTitles = document.querySelectorAll('[href="title-menu"]');
+        for(let i = 0; i < menuTitles.length; i++){
+            menuTitles[i].href = '';
+            menuTitles[i].classList.add('title__menu');
+            if(i != 0){
+                menuTitles[i].style.marginTop = "40px";
+            }
+        }
+    }
+
+    function remake_icon(){
+        add_close_svg(document.querySelector(".t450__close-button"));
+        add_close_svg(document.querySelector(".t1002__close-button"));
+        add_close_svg(document.querySelector(".t706__cartpage-close"));
+        add_close_svg(document.querySelector(".t706__sidebar-close-btn"));  
+    }
+
+    function find_element_pos(el, pos){
+        let elPos = el.getBoundingClientRect();
+        let bodyPos = document.querySelector("body").getBoundingClientRect();
+        if(pos == "top"){
+            return  elPos.top - bodyPos.top;
+        } else if(pos == "bottom"){
+            return elPos.bottom - bodyPos.top;
+        }
+    }
+
+    function made_massive(){
+        let categoryData = [];
+        if(window.localStorage.getItem('categoryItems') != null){
+            categoryData = JSON.parse(window.localStorage.getItem('categoryItems'));
+        }
+        const tabs = document.querySelectorAll(".t-store__parts-switch-wrapper .js-store-parts-switcher");
+        tabs.forEach(el => {
+            let pass = true;
+            categoryData.forEach(cat => {
+                if(cat[0].includes(el.dataset.storepartUid)){
+                    pass = false;
+                }
+                if(cat[1].includes(el.textContent)){
+                    pass = false;
+                }
+            });
+            if(pass){
+                let miniData = [];
+                miniData.push(el.dataset.storepartUid);
+                miniData.push(el.textContent);
+                categoryData.push(miniData);
+            }
+        });
+        window.localStorage.setItem('categoryItems', JSON.stringify(categoryData));
+    }
+
+
+    function change__inf(el, inf){
+        let obj = document.querySelector(el);
+        if(obj){
+            obj.innerHTML = inf;
+        } else{
+            console.log(el + "not found");
+        }
+    }
+
+    function change__inf_all(el, inf){
+        let obj = document.querySelectorAll(el);
+        obj.forEach(el => {
+            el.innerHTML = inf;
+        });
+    }
+
+    function change__inf_all_icon(el, inf){
+        let obj = document.querySelectorAll(el);
+        obj.forEach(el => {
+            el.innerHTML = inf;
+            el.removeAttribute("viewBox");
+            el.style.display = 'flex';
+            el.style.justifyContent = "center";
+            el.style.alignItems = "center";
+        });
+    }
+
+    function bread_remake(){
+        const elemsBread = document.querySelectorAll(".t758 .t-menu__link-item");
+        const prodSnip = document.querySelector('.t-store__product-snippet');
+        if(prodSnip){
+            elemsBread.forEach(el => {
+                if(el.textContent.includes("Раздел")){
+                    let newA = document.createElement('a');
+                    newA.classList.add('t-menu__link-item');
+                    newA.classList.add('t-menu__link-item_js');
+                    el.innerHTML = '';
+                    JSON.parse(window.localStorage.getItem('categoryItems')).forEach(cat => {
+                        if(prodSnip.dataset.productPartUid.includes(cat[0])){
+                            newA.textContent = cat[1];
+                            newA.href = '/catalog';
+                            newA.dataset.productPartUid = cat[0];
+                            click_new_a(el, cat[0]);
+                        }
+                    });
+                    el.parentNode.prepend(newA);
+                } else if(el.textContent.includes("Товар")){
+                    el.textContent = prodSnip.querySelector(".js-store-prod-name").textContent;
+                }
+            });
+            document.querySelector(".t758__list").style.opacity = 1;
+            click_new_a();
+        }
+    }
+
+    function click_new_a(){
+        const linkJs = document.querySelector(".t-menu__link-item_js");
+        if(linkJs){
+            linkJs.addEventListener('click', () => {
+                window.localStorage.setItem("active", linkJs.dataset.productPartUid);
+            });
+        }
+        
+    }
+
+
+
+    function event_scroll_popup(el){
+        if(window.innerWidth > 960){
+            const popupFixedBlock = document.querySelector(".t-store__prod-popup__info.t-store__prod-popup__col_fixed");
+            if(popupFixedBlock){
+                popupFixedBlock.parentNode.style.display = "flex";
+                popupFixedBlock.parentNode.style.position = "relative";
+                const popupFixedBlockCon = popupFixedBlock.parentNode.parentNode;
+                    if(window.scrollY < find_element_pos(popupFixedBlockCon, "top") - 50){
+                        el.style.position = "absolute";
+                        popupFixedBlock.style.top = 0;
+                        popupFixedBlock.style.bottom = "auto";
+                    } else if(find_element_pos(popupFixedBlockCon, "bottom") - 50 - popupFixedBlock.offsetHeight < window.scrollY){
+                        popupFixedBlock.style.position = "absolute";
+                        popupFixedBlock.style.bottom = 0;
+                        popupFixedBlock.style.top = "auto";
+                    } else{
+                        popupFixedBlock.style.position = "fixed";
+                        popupFixedBlock.style.top = "50px";
+                    }
+                    window.addEventListener("scroll", (event) => {
+                        if(window.scrollY < find_element_pos(popupFixedBlockCon, "top") - 50){
+                            popupFixedBlock.style.position = "absolute";
+                            popupFixedBlock.style.top = 0;
+                            popupFixedBlock.style.bottom = "auto";
+                        } else if(find_element_pos(popupFixedBlockCon, "bottom") - 50 - popupFixedBlock.offsetHeight < window.scrollY){
+                            popupFixedBlock.style.position = "absolute";
+                            popupFixedBlock.style.bottom = 0;
+                            popupFixedBlock.style.top = "auto";
+                        } else{
+                            popupFixedBlock.style.position = "fixed";
+                            popupFixedBlock.style.top = "50px";
+                        }
+                    });
+            }
+        }
+    }
+
+    function add_close_svg(el){
+        if(el){
+            el.innerHTML = `
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.7578 15.7573L24.2431 24.2426" stroke="black"/>
+                <path d="M15.7578 24.2427L24.2431 15.7574" stroke="black"/>
+            </svg>`;
+            el.classList.add('close__icon');
+        }
+    }
+
+    function remake_btn(){
+        const whatsBtn = document.querySelector('.t450__right_buttons a[href*="wa.me"]');
+        if(whatsBtn){
+            let svgWhaBtn = document.createElement('div');
+            svgWhaBtn.classList.add("wha__btn_img");
+            svgWhaBtn.innerHTML = `
+            <svg width="18" height="18" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.49961 1.6001C4.96521 1.6001 2.09961 4.4657 2.09961 8.0001C2.09961 9.20074 2.43686 10.3201 3.01211 11.2803L2.1569 14.4001L5.34336 13.5636C6.27527 14.0935 7.35107 14.4001 8.49961 14.4001C12.034 14.4001 14.8996 11.5345 14.8996 8.0001C14.8996 4.4657 12.034 1.6001 8.49961 1.6001ZM6.30898 5.01468C6.41298 5.01468 6.51984 5.01405 6.61211 5.01885C6.72624 5.02151 6.85047 5.02987 6.9694 5.29281C7.11073 5.60534 7.41848 6.38938 7.45794 6.46885C7.49741 6.54831 7.52538 6.64193 7.47044 6.74593C7.41818 6.8526 7.39099 6.91716 7.31419 7.01156C7.23473 7.10329 7.14765 7.21722 7.07565 7.28656C6.99618 7.36602 6.91413 7.45316 7.00586 7.61156C7.09759 7.76996 7.41618 8.28923 7.88711 8.70843C8.49244 9.24923 9.00318 9.41542 9.16211 9.49489C9.32104 9.57436 9.41308 9.56197 9.50482 9.45531C9.59922 9.35131 9.90128 8.99445 10.0079 8.83551C10.1119 8.67658 10.2181 8.70408 10.3621 8.75635C10.5082 8.80861 11.2876 9.19251 11.4465 9.27197C11.6054 9.35144 11.7096 9.39077 11.7496 9.45531C11.7907 9.52197 11.7907 9.83934 11.659 10.2095C11.5273 10.5791 10.8804 10.9365 10.5902 10.9616C10.2974 10.9888 10.0242 11.0932 8.68711 10.5668C7.07431 9.93156 6.0572 8.27968 5.97773 8.17301C5.89827 8.06901 5.3319 7.31418 5.3319 6.53551C5.3319 5.75418 5.74156 5.37153 5.88503 5.2126C6.03116 5.05366 6.20232 5.01468 6.30898 5.01468Z" fill="white"/>
+            </svg> `;
+            whatsBtn.prepend(svgWhaBtn);
+        } else{
+            console.log("Такого элемента нет");
+        }
+    }
+
+    function delete_interval(){
+        document.querySelectorAll(".t1002__product-del").forEach(el => {
+            el.innerHTML = `
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.53516 1.46446L1.46409 8.53553" stroke="#999999"/>
+                <path d="M8.53516 8.53554L1.46409 1.46447" stroke="#999999"/>
+            </svg>`;
+            el.style.display = "table-cell";
+        });
+    }
+
+    function move_tabs_cat(){
+        const popupFixed = document.querySelector('.t-store__prod-popup__info');
+        const tabsBlock = document.querySelector('.js-store-tabs');
+        if(popupFixed && tabsBlock){
+            popupFixed.append(tabsBlock);
+        }
+    }
+
+    function interval_remake(){
+        setInterval(() => {
+            change__inf_all('.t706__product-plus', `
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 0V10" stroke="#999999"/>
+                    <path d="M10 5L-2.98023e-07 5" stroke="#999999"/>
+                </svg>
+            `);
+            change__inf_all('.t706__product-minus', `
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 5L-2.98023e-07 5" stroke="#999999"/>
+                </svg>
+            `);
+            change__inf_all('.t706__product-del', `
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.53516 1.46446L1.46409 8.53553" stroke="#999999"/>
+                    <path d="M8.53516 8.53554L1.46409 1.46447" stroke="#999999"/>
+                </svg>
+            `);
+            change__inf_all('.t-slds__main .t-slds__arrow-right', `
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 5L10 5" stroke="black"/>
+                    <path d="M6 9L10 5L6 1" stroke="black"/>
+                </svg>
+            `);
+            change__inf_all('.t-slds__main .t-slds__arrow-left', `
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 5L1 5" stroke="black"/>
+                    <path d="M5 9L1 5L5 1" stroke="black"/>
+                </svg>
+            `);
+            change__inf_all_icon('.t706__search-icon', `
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="4.28571" cy="4.28571" r="4.28571" transform="matrix(-1 0 0 1 11 1)" stroke="#999999" stroke-width="1.42857"/>
+                    <path d="M1.00028 11L3.85742 8.14282" stroke="#999999" stroke-width="1.42857"/>
+                </svg>
+            `);
+
+            
+        }, 300);
+        
+    }
+
+    function init_all_func(){
+        remake_title_menu();
+        interval_remake();
+        remake_icon();
+        remake_btn();
+        move_tabs_cat();
+        event_scroll_popup();
+        setTimeout(made_massive, 1000);
+        setInterval(delete_interval, 100);
+        setTimeout(bread_remake, 500);
+        shadow_root_el();
+        setInterval(shadow_root_el, 500);
+    }
+    
+    window.addEventListener("load", () => {
+        setTimeout(init_all_func, 200);
+    });
+</script>
